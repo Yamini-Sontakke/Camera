@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+      
+      <head>
+	  <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width,intial-scale=1" />
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+			<!-- Optional theme -->
+<link rel="stylesheet" href="css/magic-bootstrap-min.css">
+
+	  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+	  <style>
+	  
+	 body {
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('img0.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+	  </style>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+			<script src="js/controllers/app.js"></script>
+      </head>
+      
+      <body ng-controller="homeCtrl">
+            <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                        <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#">My Web</a>
+                        </div>
+                        <div>
+                              <div class="collapse navbar-collapse" id="MyNavbar">
+                                    <ul class="nav navbar-nav">
+                                          <li class="active">
+                                                <a href="#home">Home</a>
+                                          </li>
+                                          <li>
+                                                <a href="#airlines">Airlines</a>
+                                          </li>
+                                          <li>
+                                                <a href="#flights">Flights</a>
+                                          </li>
+                                          <li>
+                                                <a href="#">Page 3</a>
+                                          </li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+                  </div>
+            </nav>
+            <div ng-view>
+			
+            </div>
+            <script src="http://code.jquery.com/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      </body>
+
+</html>
